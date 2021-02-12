@@ -12,13 +12,13 @@ public class Main {
             count++;
         }
 
-        int CountDo = 1;
+        int countDo = 1;
 
         // Do while loop
         do {
-            System.out.println("Do getal is: " + CountDo);
-            CountDo++;
-        } while (CountDo < 11);
+            System.out.println("Do getal is: " + countDo);
+            countDo++;
+        } while (countDo < 11);
 
     }
 

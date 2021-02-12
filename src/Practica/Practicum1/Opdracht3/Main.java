@@ -11,15 +11,15 @@ public class Main {
         while (count < 11) {
 
             // Random numbers
-            int random_int = (int)(Math.random() * (max - min + 1) + min);
+            int randomInt = (int)(Math.random() * (max - min + 1) + min);
 
             // Random number 0.0 to 1.0
-            double random_double = Math.random();
+            double randomDouble = Math.random();
 
             System.out.println("Random numbers : ");
-            System.out.println(random_int);
+            System.out.println(randomInt);
             System.out.println("and");
-            System.out.println(Math.round(random_double * 10) / 10.0);
+            System.out.println(Math.round(randomDouble * 10) / 10.0);
 
             count++;
         }
