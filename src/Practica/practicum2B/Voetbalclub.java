@@ -22,7 +22,7 @@ public class Voetbalclub {
     }
 
     public Integer aantalPunten() {
-        Integer p = (aantalGewonnen * puntenBijWinnen) + (aantalGelijk) + (aantalVerloren);
+        Integer p = (aantalGewonnen * puntenBijWinnen) + (aantalGelijk);
         return p;
     }
 
