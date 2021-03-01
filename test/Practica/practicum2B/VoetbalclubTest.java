@@ -12,7 +12,7 @@ class VoetbalclubTest {
     @Test
     void voetbalclubNaam (){
         Voetbalclub ajx = new Voetbalclub("");
-        assertSame( "FC",  "Ajax");
+        assertSame( "FC",  ajx);
     }
     // Eis 2
     @Test
