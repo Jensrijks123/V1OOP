@@ -1,19 +1,21 @@
 package Practica.practicum2B;
 
 
-import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 
 
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class VoetbalclubTest {
     // Eis 1
     @Test
     void voetbalclubNaam (){
-        Voetbalclub ajx = new Voetbalclub("");
-        assertSame( "FC",  ajx);
+        Voetbalclub feij = new Voetbalclub("FC");
+
+        assertSame("FC", feij.toString());
     }
+
     // Eis 2
     @Test
     void beinvloedenPuntenGewonnen () {

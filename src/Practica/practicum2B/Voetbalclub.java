@@ -3,13 +3,13 @@ package Practica.practicum2B;
 public class Voetbalclub {
 
     private String club;
-    private Integer aantalGewonnen = 0;
-    private Integer aantalGelijk = 0;
-    private Integer aantalVerloren = 0;
-    private Integer puntenBijWinnen = 3;
+    private int aantalGewonnen = 0;
+    private int aantalGelijk = 0;
+    private int aantalVerloren = 0;
+    private int puntenBijWinnen = 3;
 
-    public Voetbalclub(String cl) {
-        club = cl;
+    public Voetbalclub(String club) {
+        this.club = club;
     }
 
     public void verwerkResultaat(char ch) {
@@ -22,7 +22,7 @@ public class Voetbalclub {
     }
 
     public Integer aantalPunten() {
-        Integer p = (aantalGewonnen * puntenBijWinnen) + (aantalGelijk);
+        Integer p = (aantalGewonnen * 3) + aantalGelijk;
         return p;
     }
 
@@ -32,9 +32,8 @@ public class Voetbalclub {
     }
 
     public String toString() {
-        String a = club + " " + (aantalGewonnen + aantalGelijk + aantalVerloren) + " " + aantalGewonnen + " " + aantalGelijk + " " + aantalVerloren + " " + ((aantalGewonnen * puntenBijWinnen) + (aantalGelijk) + (aantalVerloren));
-        return a;
+        String s = club + " " + (aantalGewonnen + aantalGelijk + aantalVerloren) + " " + aantalGewonnen + " " + aantalGelijk + " " + aantalVerloren + " " + ((aantalGewonnen * puntenBijWinnen) + (aantalGelijk) + (aantalVerloren));
+        return s;
     }
-
 
 }
