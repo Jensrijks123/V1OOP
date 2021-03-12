@@ -8,12 +8,15 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class VoetbalclubTest {
+
+
+
     // Eis 1
     @Test
     void voetbalclubNaam (){
-        Voetbalclub feij = new Voetbalclub("FC");
+        Voetbalclub feij = new Voetbalclub("");
 
-        assertSame("FC", feij.toString());
+        assertEquals("FC", feij.getNaam());
     }
 
     // Eis 2

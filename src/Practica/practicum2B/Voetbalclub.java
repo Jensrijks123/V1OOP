@@ -36,4 +36,7 @@ public class Voetbalclub {
         return s;
     }
 
+    public String getNaam() {
+        return "ss";
+    }
 }
